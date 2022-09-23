@@ -1,4 +1,5 @@
 class Book
+  attr_accessor :name, :author, :page_bookmark
   def initialize(name, author)
     @name = name
     @author = author
