@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git url: 'https://github.com/joyrel-vaz/jenkins-demos', branch: 'main'
+                git url: "${git_url}", branch: 'main'
                 echo 'Building!!'
             }
         }
