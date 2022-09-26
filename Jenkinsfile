@@ -12,5 +12,11 @@ pipeline {
                 echo 'Testing!!'
             }
         }
+        
+                stage('Run book.rb') {
+            steps {
+                bat 'ruby book.rb'
+            }
+        }
     }
 }
